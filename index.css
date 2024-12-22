@@ -1,0 +1,220 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ECEBDE; /* Soft light background */
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #A59D84, #C1BAA1); /* Soft gradient for header */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Navigation */
+nav {
+    background: #A59D84; /* Warm beige for navigation */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #D7D3BF; /* Light beige hover color */
+}
+
+/* Content Section */
+section.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ECEBDE; /* Light soft background */
+}
+
+section.content table {
+    width: 100%;
+    max-width: 1200px;
+    border-spacing: 20px;
+    background-color: #D7D3BF; /* Pale greenish beige for table background */
+}
+
+section.content .text {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+section.content h2 {
+    color: #A59D84; /* Warm beige for headings */
+}
+
+section.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section.content .buttons {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+section.content .btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section.content .hire-me {
+    background: #C1BAA1; /* Light olive-beige for "Hire Me" button */
+    color: white;
+}
+
+section.content .hire-me:hover {
+    background: #A59D84; /* Darker shade for hover */
+}
+
+section.content .see-work {
+    background: #D7D3BF; /* Pale greenish beige for "See Work" button */
+    color: #023e8a;
+}
+
+section.content .see-work:hover {
+    background: #A59D84; /* Darker shade for hover */
+}
+
+/* About Me Section */
+section.About-me {
+    padding: 2rem;
+    background-color: #ECEBDE; /* Soft light background */
+    line-height: 1.8;
+}
+
+section.About-me h2 {
+    color: #A59D84; /* Warm beige for headings */
+    margin-bottom: 1rem;
+}
+
+section.About-me ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+/* Portfolio Section */
+section.Portfolio {
+    padding: 2rem;
+    background-color: #FFF;
+    color: #333;
+}
+
+section.Portfolio .project h2 {
+    color: #A59D84; /* Warm beige for project headings */
+    margin-bottom: 1rem;
+}
+
+section.Portfolio p, section.Portfolio ul {
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+section.contact {
+    background: linear-gradient(45deg, #A59D84, #C1BAA1); /* Gradient for contact section */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+section.contact h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+section.contact p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+section.contact .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section.contact .social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+section.contact .social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section.content table {
+        width: 100%;
+    }
+
+    section.About-me, section.Portfolio, section.contact {
+        text-align: left;
+        padding: 1rem;
+    }
+}
